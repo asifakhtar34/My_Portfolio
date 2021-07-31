@@ -47,11 +47,14 @@ transform: translate(-100%, 60%);
 font-size: 1.8rem;
 cursor: pointer;
 color: #fff;
+height: 20px;
+
 
 @media screen and (max-width:768px){
     display: block;
 }
 `;
+
 
 export const NavMenu = styled.ul`
  display: flex;
@@ -59,6 +62,8 @@ export const NavMenu = styled.ul`
  list-style-type: none;
  text-align: center;
  margin-right: -22px;
+ /* position: relative;
+ right: 20px; */
 
  @media screen and (max-width: 768px){
      display: none;
@@ -79,7 +84,36 @@ padding: 0 1rem;
 height: 100%;
 cursor: pointer;
 
-&.active{
+&:active{
     border-bottom: 3px solid #01bf71;
 }
+`
+
+export const NavBtn = styled.div`
+display:flex;
+align-items: center;
+
+@media screen and (max-width: 768px){
+  display: none;
+}
+`
+export const NavBtnLink = styled(LinkR)`
+
+padding: 10px 22px;
+color:#010606;
+text-decoration: none;
+border-radius: 50px;
+background: #01bf71;
+white-space: nowrap;
+cursor: pointer;
+font-size: 16px;
+transition: all 0.2s ease-in-out;
+
+
+&:hover{
+  /* color: #01bf71; */
+  background: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
 `

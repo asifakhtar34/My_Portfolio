@@ -1,12 +1,18 @@
 
+
 import './App.css';
-import Navbar from './components/Navbar';
+import Home from './pages/home'
 import {BrowserRouter as Router} from 'react-router-dom'
+import Email from './pages/Email';
+
 
 function App() {
+  // let isopen = false;
+  
   return (
     <Router>
-     <Navbar/>
+     <Home />
+     
     </Router>
   );
 }
